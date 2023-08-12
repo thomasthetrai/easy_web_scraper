@@ -7,7 +7,6 @@ url = 'https://www.aftonbladet.se/nyheter/a/Rr77qd/aftonbladet-direkt'
 response = requests.get(url)
 soup = BeautifulSoup(response.content, 'lxml')
 
-# Find all the 'a' tags inside the 'main' tag
 all_a_tags = soup.find_all('a')
 smth2 = None
 

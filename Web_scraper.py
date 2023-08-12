@@ -7,8 +7,6 @@ url = 'https://www.aftonbladet.se/nyheter/a/Rr77qd/aftonbladet-direkt'
 response = requests.get(url)
 soup = BeautifulSoup(response.content, 'lxml')
 
-all_a_tags = soup.find_all('a')
-smth2 = None
 
 bb = soup.find_all('h3', class_='hyperion-css-tn510y')
 
